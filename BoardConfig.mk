@@ -22,9 +22,6 @@ BOARD_HAVE_QCOM_FM := true
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Kernel
-TARGET_KERNEL_CONFIG += vendor/xiaomi/beryllium.config
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
