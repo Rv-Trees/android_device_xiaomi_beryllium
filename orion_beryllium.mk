@@ -9,8 +9,21 @@ $(call inherit-product, device/xiaomi/beryllium/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# OrionOS Flags
+ORION_MAINTAINER := Rve
+ORION_MAINTAINER_LINK := https://t.me/rve270
+ORION_BUILD_TYPE := UNOFFICIAL
+ORION_GAPPS := true
+TARGET_ENABLE_BLUR := false
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_HAS_UDFPS := false
+
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := orion_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
